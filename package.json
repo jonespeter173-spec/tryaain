@@ -1,0 +1,10 @@
+{
+  "name": "ironcoach",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "IronCoach – adaptive Ironman / 70.3 / XC ski training planner with Garmin sync",
+  "scripts": { "android:sync": "npx cap sync android", "android:open": "npx cap open android" },
+  "dependencies": { "@capacitor/android": "^7.0.0", "@capacitor/core": "^7.0.0", "@capacitor/filesystem": "^7.0.0", "@capacitor/share": "^7.0.0" },
+  "devDependencies": { "@capacitor/cli": "^7.0.0", "@capacitor/assets": "^3.0.5" }
+}

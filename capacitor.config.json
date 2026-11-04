@@ -1,0 +1,7 @@
+{
+  "appId": "com.peterjones.ironcoach",
+  "appName": "IronCoach",
+  "webDir": "www",
+  "server": { "url": "https://YOUR-PROJECT.pages.dev", "androidScheme": "https" },
+  "android": { "backgroundColor": "#0d47a1" }
+}

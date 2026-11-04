@@ -1,0 +1,11 @@
+{
+  // IronCoach – Cloudflare Worker config. "name" must match your Worker's name.
+  "name": "iron5",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./www",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  }
+}
