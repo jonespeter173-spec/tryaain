@@ -14,7 +14,7 @@ function safeEqual(a = "", b = "") { if (a.length !== b.length) return false; le
 
 async function getToken(env, force = false) {
   if (!force && cached.token && Date.now() < cached.exp) return cached.token;
-  const r = await fetch(TOKEN_URL, { method: "POST", headers: { Authorization: `ApiKey ${env.GARMIN_API_KEY}`, Accept: "application/json" } });
+  const r = await fetch(TOKEN_URL, { method: "POST", headers: { Authorization: `ApiKey ${env.GARMIN_API_KEY.trim()}` } });
   const text = await r.text();
   if (!r.ok) throw Object.assign(new Error(`Garmin token request failed (${r.status})`), { status: r.status, detail: text.slice(0, 300) });
   let data; try { data = JSON.parse(text); } catch { data = { access_token: text.trim() }; }
