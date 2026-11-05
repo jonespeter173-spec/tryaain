@@ -1,7 +1,6 @@
 {
   // IronCoach – Cloudflare Worker config. "name" must match your Worker's name.
   "name": "tryaain",
-  "keep_vars": true,
   "main": "worker.js",
   "compatibility_date": "2025-09-01",
   "assets": {
